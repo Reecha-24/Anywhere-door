@@ -5,7 +5,7 @@ import logging
 from typing import Optional, Tuple
 import boto3
 from botocore.exceptions import ClientError
-
+# change3
 from app.config import settings
 
 logger = logging.getLogger("anywhere_door.s3")
@@ -93,6 +93,7 @@ class S3Manager:
             "local_path": local_path,
             "storage_type": "local"
         }
+# change4
 
     def get_file_content(self, file_meta: dict) -> Tuple[bytes, str]:
         """Retrieves raw file bytes and content_type from S3 or local path."""

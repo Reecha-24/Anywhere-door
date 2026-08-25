@@ -1,4 +1,5 @@
 import logging
+# change1
 import time
 from typing import Optional, Dict, Any
 from datetime import datetime, timezone
@@ -61,6 +62,8 @@ class DynamoDBManager:
         except Exception as e:
             logger.warning(f"AWS DynamoDB connection unavailable: {e}. Falling back to high-speed in-memory store.")
             self.is_connected = False
+
+    # change2
 
     def save_share(self, share_data: dict) -> dict:
         """Saves a share record to DynamoDB with partition key 'code' and optional TTL."""
