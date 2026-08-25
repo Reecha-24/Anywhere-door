@@ -93,7 +93,7 @@ class S3Manager:
             "local_path": local_path,
             "storage_type": "local"
         }
-# change5
+# change6
 
     def get_file_content(self, file_meta: dict) -> Tuple[bytes, str]:
         """Retrieves raw file bytes and content_type from S3 or local path."""
