@@ -9,9 +9,8 @@ from app.config import settings
 from app.storage.dynamodb import dynamodb_manager
 from app.storage.s3 import s3_manager
 from app.routers import shares, files
-
-# Not so important change 7
-
+# diff --git a/{filename} b/{filename}\n--- a/{filename}\n+++ b/{filename}\n
+# Not so important change 89
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Initialize AWS Services (DynamoDB & S3)
@@ -53,6 +52,8 @@ async def root():
         "docs": "/docs",
         "api_v1": settings.API_V1_STR
     }
+
+# different posotion
 
 @app.get("/api/v1/health")
 async def health_check():
