@@ -11,4 +11,4 @@ def generate_pin_code(length: int = 6, numeric_only: bool = False) -> str:
         chars = '23456789ABCDEFGHJKLMNPQRSTUVWXYZ'
         return ''.join(random.choice(chars) for _ in range(length))
 
-# final
+# final2
