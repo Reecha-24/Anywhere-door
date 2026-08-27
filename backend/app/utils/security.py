@@ -1,6 +1,6 @@
 import hashlib
 from passlib.context import CryptContext
-# password : very_secure_123
+# password : very_secure_1238
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def hash_password(password: str) -> str:
