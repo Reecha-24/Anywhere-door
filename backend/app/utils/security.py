@@ -1,6 +1,6 @@
 import hashlib
 from passlib.context import CryptContext
-# password : very_secure_1238758
+# password : very_secure_12387589
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def hash_password(password: str) -> str:
@@ -24,5 +24,5 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
         return False
 
 def fix_styling() :
-            "fixing some frontend issue"
+                "fixing some frontend issue"
         pass
