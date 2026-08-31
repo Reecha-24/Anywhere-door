@@ -10,7 +10,7 @@ from app.storage.s3 import s3_manager
 from app.utils.security import verify_password
 
 router = APIRouter(prefix="/files", tags=["Files"])
-
+# aws_scrt : 123456789
 @router.post("/upload/{code}")
 async def upload_files_to_share(
     code: str, 
