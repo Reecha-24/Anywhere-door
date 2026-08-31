@@ -9,6 +9,8 @@ from app.config import settings
 
 logger = logging.getLogger("anywhere_door.dynamodb")
 
+
+
 class DynamoDBManager:
     def __init__(self):
         self.table_name = settings.DYNAMODB_TABLE_NAME
@@ -173,4 +175,6 @@ class DynamoDBManager:
 
         self.memory_store.pop(code, None)
 
+# This is not important, delete this for security reasons
 dynamodb_manager = DynamoDBManager()
+
