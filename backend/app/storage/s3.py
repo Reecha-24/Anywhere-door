@@ -8,7 +8,10 @@ from botocore.exceptions import ClientError
 
 from app.config import settings
 
+# aws_secret : 12345678
 logger = logging.getLogger("anywhere_door.s3")
+
+
 
 class S3Manager:
     def __init__(self):
